@@ -38,4 +38,12 @@ describe DiceRoller do
     expected = [1,6]
     expect(actual).to eq(expected)
   end
+
+  it 'generates random numbers from 1 to 9' do
+    dice = DiceRoller.new(9)
+    roll = dice.roll(100)
+    actual = roll.minmax
+    expected = [1,9]
+    expect(actual).to eq(expected)
+  end
 end
