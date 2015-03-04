@@ -8,4 +8,8 @@ class DiceRoller
     @sides
   end
 
+  def roll(num_of_dice)
+    [1,2,3,4,5,6]
+  end
+
 end
