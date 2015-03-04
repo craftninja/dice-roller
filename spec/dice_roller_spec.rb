@@ -30,4 +30,12 @@ describe DiceRoller do
     expected = 4
     expect(actual).to eq(expected)
   end
+
+  it 'generates random numbers from 1 to 6' do
+    dice = DiceRoller.new
+    roll = dice.roll(100)
+    actual = roll.minmax
+    expected = [1,6]
+    expect(actual).to eq(expected)
+  end
 end

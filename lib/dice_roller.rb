@@ -11,7 +11,7 @@ class DiceRoller
   def roll(num_of_dice)
     rolls = []
     num_of_dice.times do
-      rolls << 1
+      rolls << rand(1..6)
     end
     rolls
   end
