@@ -7,4 +7,11 @@ describe DiceRoller do
     expected = 6
     expect(actual).to eq(expected)
   end
+
+  it 'initializes a dice with 12 sides' do
+    dice = DiceRoller.new(12)
+    actual = dice.sides
+    expected = 12
+    expect(actual).to eq(expected)
+  end
 end
