@@ -22,4 +22,12 @@ describe DiceRoller do
     expected = 6
     expect(actual).to eq(expected)
   end
+
+  it 'can roll four dice' do
+    dice = DiceRoller.new
+    roll = dice.roll(4)
+    actual = roll.size
+    expected = 4
+    expect(actual).to eq(expected)
+  end
 end
